@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+  }
+  
+
+  .push-tab {
+    margin-left: 15rem;
+  }
+  
+  
+  
+  /* SideBar */
+  
+  
+  
+  .sidemenu {
+    display: block;
+    background-color:  #003380;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  
+  
+  
+  
+  .budy {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidemenu .logo img {
+    width: 50%;
+    margin-left: 8rem;
+    margin-top: 3rem;
+  }
+  
+  
+  .bar {
+    margin-top: 8rem;
+  }
+  
+  
+  
+  .dash, .active {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1.5rem ;
+    
+  }
+  
+  .active {
+    background-color: #0044AA;
+  }
+  
+  
+  .dash a, .active a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 0.4rem;
+    margin-left: 0.7rem;
+  }
+  
+  .dash i {
+    color: #fff;
+  }
+  
+  
+  
+  .dash:hover, .uber:hover {
+    background-color: #0044AA;
+  }
+  
+  
+  .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  .uber {
+    background-color: #0044AA;
+  }
+  
+  
+  
+  
+  
+  
+  .uber {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-left: 1rem;
+      margin-top: 4rem;
+      padding: 0.5rem 0.6rem;
+      color: #fff;
+      overflow: hidden;
+  }
+  
+  .ub  {
+   margin-top: 0.8rem;
+  }
+  
+  .ub i {
+    position: absolute;
+    margin-left: 1.8rem;
+    margin-top: 1.4rem;
+    z-index: 90;
+    color: #04802E;
+    font-size: 6px;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+  }
+  
+  .txt-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  
+  
+  .txt-area h4 {
+    margin-top: 0.2rem;
+    color: #fff;
+  }
+  
+  
+  
+  .txt-area p {
+    margin-top: 0.8rem;
+    color: #ffffff98;
+  }
+  
+  .ic {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .ic  {
+    color: #fff;
+  }
+  
+  
+  
+  
+  /* Ham Menu */
+  
+  .show {display: block, !important;}
+  
+  
+  .push-tab {
+    margin-left: 15rem;
+  }
+  
+  .me, .closebtn {
+    display: none;
+  }
+  
+  .ham, .menu {
+    display: none;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .side-content {
+    display:none;
+  }
+  
+
+/* Mid Content*/
+
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.bud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btt button{
+    float: right;
+    font-size: 1.3rem;
+    padding: 1.3rem 1.7rem;
+    background-color: #fff;
+    border: 0.2rem solid #EA6813;
+    color: #EA6813;
+    font-family: "Montserrat";
+    border-radius: 0.3rem;
+}
+
+.btt button:hover {
+    color: #fff;
+    background-color: #EA6813;
+    border: 2px solid #ED813A;
+}
+
+
+.bud span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.bud a {
+    color: #000;
+}
+
+.bud a:hover {
+    color: #666;
+}
+
+
+.right {
+    margin: auto;
+   margin-left: 30rem; 
+    font-size: 1.6rem; 
+    padding: 6rem 0.7rem;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.grey {
+    background-color: #F7F7F7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    margin-top: 10rem;
+}
+
+.rix {
+    margin-left: 0.2rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+
+.rix i {
+    color: #D42620;
+}
+
+.rite form{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.rite div, .st div {
+    margin: 1rem;
+}
+
+.st form{
+    display: flex;
+    justify-content: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+}
+
+
+
+::placeholder {
+   align-items: left;
+}
+
+input {
+    padding: 0.5rem;
+    width: 30rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+
+
+
+
+  input[type=text]:focus {
+    border: 3px solid #7e7e7e;
+  }
+
+  #day {
+    padding: 0.4rem;
+    color: #7e7e7e;
+  }
+
+  select {
+    padding: 0.45rem;
+    width: 30rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  select[type=text]:focus {
+    border: 3px solid #7e7e7e;
+  }
+
+  .rit {
+    display: flex;
+    justify-content: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.rit div {
+    margin: 1rem;
+}
+
+
+.rit form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gen a {
+    color: #EA6813;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+#show {
+    margin-top: 2rem;
+    
+}
+
+
+
+  textarea {
+    width: 92rem;
+    height: 6rem;
+    padding: 0.8rem 2rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 0.4rem;
+    background-color: #f8f8f8;
+    font-size: 1.3rem;
+    resize: none;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  textarea[type=text]:focus {
+    border: 3px solid #7e7e7e;
+    background-color: #fff;
+  }
+
+
+  .ref {
+    padding: 3rem;
+  }
+  .ref label {
+    margin-top: 2rem;
+  }
+
+  label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px; 
+    display: block; 
+  }
+
+
+
+
+
+
+
+
+/* Add-vehicle.css */
+
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+body.dark-theme .sidebar {
+    
+  
+    color: #ffffff;
+}
+
+.right {
+    
+    background-color: #ffffff;
+}
+
+body.dark-theme .right {
+    
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .right i {
+    color: #ccc;
+}
+
+body.dark-theme .right i:hover {
+    color: #8b8888;
+}
+
+
+body.dark-theme .grey {
+    background-color: #000;
+    color: #fff;
+}
+
+
+body.dark-theme .rix, body.dark-theme label {
+    color: #fff;
+}
+
+body.dark-theme .rix i {
+    color: #D42620;
+  }
+
+
+
+.togg {
+    position: fixed;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.1rem  1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 0 #000;
+    bottom: 28rem;
+    left: 1rem;
+}
+
+.togg:hover {
+    color: #6e6e6e;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+ 
+
+  .mid {
+      margin-left: 0;
+      padding: 2rem;
+      margin-top: 3rem;
+  }
+
+
+  .right {
+    margin: auto;
+    font-size: 1.6rem; 
+    padding: 2rem 0.2rem;
+    overflow-x: hidden;
+}
+
+
+.grey {
+
+  font-size: 1rem;
+  padding: 2rem 0;
+  margin-top: 10rem;
+}
+
+  .top {
+      flex-direction: row;
+      align-items: center;
+
+  }
+
+  .rix  {
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .rite form div {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .btt button {
+      font-size: 1rem;
+  }
+
+  input {
+      width: 90%;
+  }
+
+  .rite select {
+    padding: 0.6rem;
+  }
+
+  .st form {
+    display: flex;
+    justify-content: left;
+    margin: 0.8rem;
+  }
+
+
+  select {
+    padding: 0.45rem;
+    width: 20rem;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+
+
+  .st input {
+    width: 70%;
+  }
+
+  textarea {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .sidemenu {
+      display: none;
+  }
+
+  .sidebar {
+      display: block;
+  }
+
+  .mid {
+      padding: 1rem;
+  }
+
+  .btt button {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .rit {
+      flex-direction: column;
+  }
+
+  select {
+      width: 100%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="stylesheet" href="Add-vehicle.css">
+    <link rel="stylesheet" href="Addv-mobile.css">
+    <link rel="stylesheet" href="Addv-tab.css">
+
+    <title>My Vehicle/Add a Vehicle</title>
+
+
+</head>
+
+<body>
+
+    <div class="mobile-container" id="main">
+
+        <div class="me" id="navbar">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ham">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="sid-con">
+        <div class="sidemenu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="active">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="dash">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="side-content" id="myLinks">
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="active">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="dash">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="mid">
+        <div class="right" id="myTab">
+
+            <div class="enn">
+                <div class="top">
+                    <div class="bud">
+                        <a href="My-vehicles.html"><i class="fa-solid fa-arrow-left-long"></i></a><span>Add a
+                            Vehicle</span>
+                    </div>
+                    <div class="btt-n">
+                        <a href="#" class="btt"><button type="submit">Save</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grey">
+                <div class="rix">
+                    <p>Vehicle details <i class="fa-light fa-asterisk"></i></p>
+
+                </div>
+
+                <div class="rite">
+                    <form action="/action_page.php">
+                        <div class="veh">
+                            <label for="Vehicle Type">Vehicle Type<br></label>
+                            <input type="text" name="vehicle type" id="vtype" placeholder="Enter">
+
+                        </div>
+
+                        <div class="lic">
+                            <label for="License Plate Number">License Plate Number<br></label>
+                            <input type="text" name="license llate number" id="lpn" placeholder="Enter">
+
+                        </div>
+
+                        <div class="ide">
+                            <label for="Vehicle Identification Number">Vehicle Identification Number<br></label>
+                            <input type="text" name="vehicle identification number" id="vin" placeholder="Enter">
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="st">
+                    <form action="/action_page.php">
+                        <div class="mak">
+                            <label for="Make">Make<br></label>
+                            <input type="text" name="make" id="make" placeholder="Enter">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="grey">
+                <div class="rix">
+                    <p>Fleet details <i class="fa-light fa-asterisk"></i></p>
+
+                </div>
+
+                <div class="rite">
+                    <form action="/action_page.php">
+
+                        <div class="fle">
+                            <label for="Fleet id">Fleet ID<br></label>
+                            <input type="text" name="fleet id" id="fid" placeholder="Enter">
+
+                        </div>
+
+
+                        <div class="dri">
+                            <label for="assigned driver">Assigned Driver<br></label>
+                            <input type="text" name="adriver" id="adr" placeholder="Enter">
+
+                        </div>
+
+                        <div class="pur">
+                            <label for="purchase lease date">Purchase Lease Date<br></label>
+                            <input type="date" name="date" id="day" placeholder="Enter">
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+            <div class="grey">
+                <div class="rix">
+                    <p>GPS Tracking <i class="fa-light fa-asterisk"></i></p>
+
+                </div>
+
+                <div class="rit">
+                    <form action="/action_page.php">
+                        <div class="gps">
+                            <label for="gps tracking">GPS Tracker ID<br></label>
+                            <input type="text" name="gps tracking" id="gps" placeholder="Enter">
+
+                        </div>
+
+
+                        <div class="sec">
+                            <label for="enable">Enable<br></label>
+                            <select name="enable" id="">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="gen">
+                    <a href="#">Generate</a>
+                </div>
+
+            </div>
+
+
+            <div class="grey">
+                <div class="rix">
+                    <p>Maintenance</p>
+
+                </div>
+
+                <div class="rite">
+                    <form action="/action_page.php">
+                        <div class="lst">
+                            <label for="last maintenance date">Last Maintenance Date<br></label>
+                            <input type="date" name="date" id="day" placeholder="Enter">
+                        </div>
+
+
+                        <div class="nxt">
+                            <label for="next maintenance due">Next Maintenance Due<br></label>
+                            <input type="date" name="date" id="day" placeholder="Enter">
+
+                        </div>
+
+                        <div class="exp">
+                            <label for="expiry">Insurance Expiry<br></label>
+                            <input type="date" name="date" id="day" placeholder="Enter">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="grey">
+                <div class="rix">
+                    <p>Specifications</p>
+
+                </div>
+
+                <div class="rite">
+                    <form action="/action_page.php">
+
+                        <div class="ful">
+                            <label for="fuel type">Fuel Type<br></label>
+                            <select id="fuelType">
+                                <option value="gasoline">Gasoline</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="electric">Electric</option>
+                                <option value="hybrid">Hybrid</option>
+                            </select>
+                        </div>
+
+
+                        <div>
+                            <label for="fuel efficiency">Fuel Efficiency<br></label>
+                            <input type="number" id="fuelEfficiency" placeholder="e.g., 30" min="0" step="0.1">
+                        </div>
+
+                        <div>
+                            <label for="fuel capacity">Fuel Capacity(mpg)<br></label>
+                            <input type="number" id="capacity" name="capacity" step="0.01" placeholder="e.g., 50.00">
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="grey">
+                <div class="rix">
+                    <p>Ownership and Purchase Details </p>
+
+                </div>
+
+                <div class="rit">
+                    <form action="/action_page.php">
+                        <div class="own">
+                            <label for="owner">Owner<br></label>
+                            <input type="text" name="owner" id="own" placeholder="Enter">
+                        </div>
+
+                        <div>
+                            <label for="purchase price">Purchase Price<br></label>
+                            <input type="text" name="price" id="price" placeholder="Enter">
+                        </div>
+                </div>
+
+            </div>
+
+
+            <div class="grey">
+                <div class="rix">
+                    <p>Additional Information </p>
+
+                </div>
+
+                <div class="ref">
+                    <form action="/action_page.php">
+                        <label for="notes">Notes<br></label>
+                        <textarea type="text">Enter</textarea>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <button onclick="toggleTheme()" class="togg">
+                <i class="fa-solid fa-moon fa-spin"></i>
+            </button>
+
+
+            <script src="Add-vehicle.js"></script>
+
+</body>
+
+</html>
