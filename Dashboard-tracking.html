@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="Dashboard-tracking.css">
+    <link rel="stylesheet" href="responsive-ham.css">
+    <link rel="stylesheet" href="responsive-hamtab.css">
+    <title>Dashboard Tracking</title>
+
+
+</head>
+
+<body>
+
+
+
+    <div class="mobile-container" id="main">
+
+        <div class="me" id="navbar">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ham">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="sid-con">
+        <div class="sidemenu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="active">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="dash">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="side-content" id="myLinks">
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="active">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="dash">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <!---  --->
+
+
+    <div class="right" id="myTab">
+
+        <div class="upp">
+            <div class="bud">
+                <h3>Dashboard</h3>
+            </div>
+
+            <div class="btt-n">
+                <a href="" class="btt">Add Vehicle</a>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+
+        <div class="tab">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>GPS Status</th>
+                        <th>Milage</th>
+                        <th>Speed</th>
+                        <th>stops</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="sec">
+                        <td><img src="https://i.postimg.cc/MKTY5yfV/Toyota_Yaris.jpg" alt="Veh">Vehicle 1</td>
+                        <td>In Transit</td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>17</td>
+                        <td> <a href="#" class="track-link" data-lat="6.5244" data-lng="3.3792">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://i.postimg.cc/gJJDhb45/Hunder_Civic.jpg" alt="Veh">Vehicle 2</td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td>150</td>
+                        <td>180</td>
+                        <td>20</td>
+                        <td><a href="#" class="track-link" data-lat="7.1907" data-lng="3.1249">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://i.postimg.cc/tCQVFH4c/Honda_City.jpg" alt="Veh">Vehicle 4</td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td>80</td>
+                        <td>190</td>
+                        <td>25</td>
+                        <td><a href="#" class="track-link" data-lat="10.1515" data-lng="7.7426">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://i.postimg.cc/Tw4cqN4P/Volvo.jpg" alt="Veh">Vehicle 5</td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td>120</td>
+                        <td>200</td>
+                        <td>17</td>
+                        <td><a href="#" class="track-link" data-lat="12.0029" data-lng="8.5918">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://i.postimg.cc/hj8RwxVT/Camry.png" alt="Veh">Vehicle 6</td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td>90</td>
+                        <td>200</td>
+                        <td>17</td>
+                        <td><a href="#" class="track-link" data-lat="8.4875" data-lng="4.6558">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://i.postimg.cc/X7fB8DZY/Corolla.jpg" alt="Veh">Vehicle 7</td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td>180</td>
+                        <td>200</td>
+                        <td>17</td>
+                        <td><a href="#" class="track-link" data-lat="6.4584" data-lng="7.5569">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td><img src="https://i.postimg.cc/X7fB8DZY/Corolla.jpg" alt="Veh">Vehicle 1</td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td>47</td>
+                        <td>200</td>
+                        <td>17</td>
+                        <td><a href="#" class="track-link" data-lat="9.0820" data-lng="8.6753">Track <i
+                                    class="fa fa-chevron-down"></i></a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+
+    <button onclick="toggleTheme()" class="togg"><i class="fa-solid fa-moon fa-spin"></i></button>
+    <!-- Button to toggle theme -->
+
+    <script src=" https://unpkg.com/leaflet/dist/leaflet.js">
+    </script>
+
+    <script src="Dashboard-tracking.js"></script>
+    <script src="responsive-ham.js"></script>
+</body>
+
+</html>

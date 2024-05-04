@@ -1,0 +1,870 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+ *, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    font-size: 62.5%;
+  }
+
+/*Header*/
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    text-align: center;
+    max-width: 100%;
+}
+
+.logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3rem;
+}
+.logo img {
+   max-width: 7rem;
+}
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    font-size: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.1rem;
+}
+
+.nav-a {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30rem;
+}
+
+.nav-a a {
+  margin: 0.1rem;  
+  color: #161515;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6rem 0.8rem;
+  z-index: 1;
+}
+
+
+
+.nav-a .active  {
+    text-decoration: none;
+    color: #fff;
+    background-color: #EA6813;
+    padding: 0.6rem 0.8rem;
+}
+
+.nav-a a:hover {
+    color: #fff;
+    background-color: #EA6813;
+}
+
+.nav-a a.arrow {
+    background-color: #EA6813;  
+}
+
+/*Nav Buttons*/
+
+.logs {
+    display: flex;
+}
+
+
+
+.logs div {
+    margin: 0.4rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.login a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #EA6813;
+    border: 0.2em solid #EA6813;
+    padding: 0.3rem 0.8rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;  
+    border-radius: 0.25rem;
+}
+
+.login a:hover{
+    color: #fff;
+    background-color: #ED813A;
+}
+
+
+.reg a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #EA6813;
+    border: 0.1rem solid #EA6813;
+    border-radius: 0.25rem;
+    padding: 0.42rem 0.6rem;
+    animation: alternate-reverse;
+    transition: 0.5s;
+}
+
+
+.reg:hover{
+    color: #fff;
+    background-color: #ED813A;
+    transform: scale(0.98);
+}
+
+
+
+.naija {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+.naija p {
+    margin-top: 0.5rem;
+}
+
+.gbl {
+    margin-right: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.dropbtn {
+    margin: 0.1rem;  
+    color: #161515;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    cursor: pointer;
+    margin: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    float: left;
+  }
+
+
+  .dropbtn i {
+    margin-left: 0.5rem;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #EA6813;
+    color: #fff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 190px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem;
+    text-align: left;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+
+
+  /* Add a media query for smaller devices */
+@media only screen and (max-width: 768px) {
+   
+    .header {
+      flex-direction: column; 
+      align-items: center; 
+      padding: 0.9rem; 
+    }
+  
+    .navbar {
+        display: flex;
+        flex-direction: column;
+      margin-right: 7rem; 
+    }
+  
+    .nav-a {
+      margin-right: 0;
+       
+    }
+  
+    .nav-a a {
+      margin-right: 1rem;
+    }
+
+    .logo img {
+        width: auto;
+    }
+  
+    .logs {
+      margin-top: 1rem; 
+      flex-direction: row;
+      margin-left: 8rem;
+    }
+  
+    .naija {
+      margin-top: 1rem; 
+    }
+  
+    .dropbtn {
+      margin: 0;
+      float: none; 
+    }
+  
+    .dropdown-content {
+      margin: 0;
+      margin-top: 1rem; 
+      left: 50%; 
+      transform: translateX(-50%); 
+    }
+  }
+  
+
+
+
+
+
+/*Header Ending*/
+
+
+.hero {
+    background-image: url("https://i.postimg.cc/SRmLv2VJ/images-16.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+
+
+.writing{
+    display: flex;
+width: 50rem;
+height: 60rem;
+padding-left: 4rem;
+background-image: linear-gradient(to right, #00000094, #6666660a);
+color: white;
+background-size: cover;
+flex-direction: column;
+
+}
+
+
+.writing h2{
+    color:white;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    margin-left: 2.9rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 10rem;
+
+}
+.writing p{
+    padding-bottom: 2rem;
+    line-height: 1.7rem;
+    margin-left: 2.8rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+
+.btn3{
+    background-color: #ED813A;
+    color: white;
+    border: none;
+    padding: 1.5rem 2rem ;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+}
+.btn3:hover{
+    background-color: white;
+    font-size: 1.3rem;
+    border: .1rem solid #ea6813;
+    color: #ea6813;
+}
+.loit{
+display: flex;
+padding-top: 3pc;
+justify-content: center;
+align-self: center;
+align-content: center;
+background-color: #FFFFFF;
+}
+.hjuy1{
+    display: none;
+}
+.ere{
+    margin-top:3pc ;
+    margin-left: 5pc;
+    font-size: 1.5rem;
+    width: 50rem;
+}
+div .image12{
+    padding-right: 1pc;
+    margin-top: 2.5rem;
+}
+.hjuy{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5pc;
+ align-self: center;
+align-content: center; 
+background-color: #FFFFFF;
+}
+.werfg{
+    margin-top: 3pc;
+    margin-right: 5pc;
+    font-size: 1.5rem;
+    width: 50rem;
+}
+.fg{
+    padding-right: 1pc;
+    
+}
+.yrfuty{
+    display: flex;
+    padding-top: 5pc;
+    justify-content: center;
+     align-self: center;
+    align-content: center; 
+    background-color: #FFFFFF;
+}
+.djffj{
+    margin-top: 2.5pc;
+    margin-left: 5pc;  
+    font-size: 1.5rem;
+    width: 50rem;
+}
+.dfrss{
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+     align-self: center;
+    align-content: center; 
+    background-color: #FFFFFF;
+}
+.ddsfq{
+    margin-top: 4rem;
+    margin-right: 5rem;  
+    font-size: 1.5rem;
+    width: 45rem;
+}
+.ddsfq h2{
+    padding-bottom: 1.5rem;
+}
+.rep img {
+   border: none;
+}
+
+span h6{
+    color: #EA6813;
+    margin-top: 1rem;
+}
+
+
+
+/* Footer */
+
+
+/*footer*/
+
+footer {
+    background-color: #000;
+    display: block;
+    justify-content: center;
+    height: 100vh;
+}
+
+div.logos img{ 
+    width: 10%;
+    margin-left: 10rem;
+    margin-top: 40px;
+}
+
+.ftr-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+}
+
+
+ul {
+    list-style: none;
+    
+}
+
+.icons {
+    margin-top: 40px;
+}
+
+.lft h4, .mid-ft h4, .rt-ft h4 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+.rt-ft a {
+    margin-left: 1rem;
+}
+
+.rt-ft i {
+    color: #fff;
+}
+
+
+
+.lft li, .mid-ft li, .rt-ft li {
+    color: #fff;
+    border-bottom: 1px solid #ffffff1f;
+    
+
+}
+
+.lft a, .mid-ft a, .rt-ft a {
+    color: #ffffffc2;
+    text-decoration: none;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 0.8rem;
+    line-height: 3rem;
+    transition: 0.2s;
+    animation: 0.2s;
+    cursor: pointer;
+    
+}
+
+.lft a:hover, .mid-ft a:hover, .rt-ft a:hover {
+    color: #ffffff59;
+}
+
+/* ICONS */
+.icons {
+    margin-top: -0.1em;
+    color: #fff;
+}
+.icons a {
+    margin: 3px;
+    display: inline-table;
+    margin-top: 1rem;
+}
+#face{
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#face:hover {
+    color: #fff;
+    transform: scale(1.5);
+}
+
+
+#twt {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none; 
+    position: relative;
+    top: 2px;
+    transition: 2ms;
+    animation: alternate-reverse;
+    
+}
+
+#twt:hover {
+    color: #1980e0;
+    transform: scale(1.5);
+}
+
+.icons h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.fab {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+	top: 0.3rem;
+}
+
+.fab {
+    width: 17px;
+    height: 18px;
+    background: linear-gradient(45deg, #ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d,  #e1306c, #c13584, #833ab4, #405de6, #5851db,  #405de6);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a svg {
+    position: absolute;
+    margin-top: -0.9em;
+}
+
+
+a svg:hover {
+    transform: scale(1.5);
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    padding: 3px 5px;
+    border-radius: 3px;
+  }
+
+  /* INPUT FIELD */
+
+.end {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nig {
+    display: flex;
+    color: #fff;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+.glb {
+    margin-right: 0.5rem;
+   margin-top: -0.1em;
+}
+
+
+
+.inpt {
+    color: #fff;
+    margin-top: 1em;
+    margin-right: 3%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 20;
+}
+
+footer input[type=email] {
+    padding: 0.6em 3em;
+    box-sizing: border-box;
+    background-color: #000;
+    border: 1px solid #666;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: #fff;
+    font-size: 0.8rem;
+   margin-top: 0.9rem;
+}
+
+
+input[type=email]:focus {
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+input:hover {
+    
+    background-color: #aaa;
+}
+
+
+ 
+
+.send button{
+    color: #fff;
+    background-color: #EA6813;
+    padding: 9px 15px;
+    border: 1px solid #EA6813;
+   border-radius: 0.2rem;
+   margin-left: 0.2rem;
+}
+
+.send button:hover {
+    background-color: #C35710;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens smaller than 768px */
+/* @media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-a a {
+        margin: 5px;
+    }
+
+    .logs {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .logs a {
+        margin: 5px;
+    }
+
+    .naija {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .naija p {
+        margin-left: 0;
+    }
+
+    /* Adjustments for main content 
+    .main {
+        padding: 20px;
+    }
+
+    .writing {
+        text-align: center;
+    }
+
+    .btn3 {
+        margin-top: 20px;
+    }
+
+    /* Adjustments for image and text sections 
+    .loit,
+    .hjuy,
+    .yrfuty,
+    .dfrss {
+        flex-direction: column;
+    }
+
+    .ere,
+    .werfg,
+    .djffj,
+    .ddsfq {
+        text-align: center;
+    }
+
+    .ere p,
+    .werfg p,
+    .djffj p,
+    .ddsfq p {
+        margin: 10px;
+    }
+
+    .image12,
+    .fg,
+    .rep {
+        margin-top: 20px;
+    }
+} */
+
+
+@media(max-width:767px) {
+  *{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+  } 
+.logs{
+    margin-top: .3rem;
+}
+  .writing{
+    /* width: 50rem; */
+    width: 100%;
+    height: 33.6rem;
+    padding-left: 3px;
+ background-image: none;
+    color: white;
+  }
+  .image12{
+    width: 100%;
+    height: 13.5rem;
+  }
+  .loit{
+    display: block;
+padding-top: 3pc;
+justify-content: center;
+align-self: center;
+align-content: center;
+margin-left: 1.2rem;
+padding-bottom: 1.5rem;
+  }
+  .loit h2{
+    padding-right:.7rem;
+  }
+  .ere{
+    margin-top:3pc ;
+    margin-left: 0pc;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+  .ere p{
+    font-size:1.5rem ;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+  }
+  .hjuy{
+    display: none;
+  }
+  .hjuy1{
+    display: block;
+    padding-top: 5rem;
+justify-content: center;
+ align-self: center;
+align-content: center; 
+margin-left: 1rem;
+padding-bottom: 1rem;
+
+}
+.fg{
+    height: 14.9rem;
+    padding: 2%;
+    width: 47rem;
+}
+.hjuy1  h2{
+margin-left: 1rem;
+}
+.hjuy1 p{
+    padding-top: 1rem;
+}
+.yrfuty{
+    display: block;
+    padding-top: 5pc;
+    justify-content: center;
+     align-self: center;
+    align-content: center; 
+    margin-left: 1rem;
+    
+}
+.djffj{
+    margin-top: 2.5pc;
+    margin-left:-.2rem;  
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.djffj h2{
+font-size: 2rem;
+}
+.djffj p{
+font-size: 1.5rem;
+}
+.dfrss{
+    display: none;
+}
+span h6{
+    margin-left: 4.7rem;
+}
+
+}
+
+body.dark-theme {
+    background-color: #222;
+}
+
+.dark-theme .hjuy {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.dark-theme .loit, .dark-theme .yrfuty {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-theme .dfrss{
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+
+
+
+.togg {
+    position: fixed;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.1rem  1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 0 #000;
+    bottom: 5rem;
+    left: 1rem;
+}
