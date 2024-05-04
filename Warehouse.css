@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+
+  
+  
+  
+  /* SideBar */
+  
+  
+  
+  .sidemenu {
+    display: block;
+    background-color:  #003380;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  
+  
+  
+  
+  .budy {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidemenu .logo img {
+    width: 50%;
+    margin-left: 8rem;
+    margin-top: 3rem;
+  }
+  
+  
+  .bar {
+    margin-top: 8rem;
+  }
+  
+  
+  
+  .dash, .active {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1.5rem ;
+    
+  }
+  
+  .active {
+    background-color: #0044AA;
+  }
+  
+  
+  .dash a, .active a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 0.4rem;
+    margin-left: 0.7rem;
+  }
+  
+  .dash i {
+    color: #fff;
+  }
+  
+  
+  
+  .dash:hover, .uber:hover {
+    background-color: #0044AA;
+  }
+  
+  
+  .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  .uber {
+    background-color: #0044AA;
+  }
+  
+  
+  
+  
+  
+  
+  .uber {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-left: 1rem;
+      margin-top: 4rem;
+      padding: 0.5rem 0.6rem;
+      color: #fff;
+      overflow: hidden;
+  }
+  
+  .ub  {
+   margin-top: 0.8rem;
+  }
+  
+  .ub i {
+    position: absolute;
+    margin-left: 1.8rem;
+    margin-top: 1.4rem;
+    z-index: 90;
+    color: #04802E;
+    font-size: 6px;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+  }
+  
+  .txt-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  
+  
+  .txt-area h4 {
+    margin-top: 0.2rem;
+    color: #fff;
+  }
+  
+  
+  
+  .txt-area p {
+    margin-top: 0.8rem;
+    color: #ffffff98;
+  }
+  
+  .ic {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .ic  {
+    color: #fff;
+  }
+  
+  
+  
+  
+  /* Ham Menu */
+  
+  .show {display: block, !important;}
+  
+  
+  .push-tab {
+    margin-left: 15rem;
+  }
+  
+  .me, .closebtn {
+    display: none;
+  }
+  
+  .ham, .menu {
+    display: none;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .side-content {
+    display:none;
+  }
+  
+  
+  /*Sidebar End*/
+  
+
+/* Mid Content*/
+
+.mid {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 5rem;
+}
+
+.upp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+
+.btt  {
+    color: #fff;
+    background-color: #EA6813;
+    border: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.7rem 0.7rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btt i {
+    margin-right: 0.5rem;
+}
+
+.btt:hover{
+    background-color: #ED813A;
+}
+
+.bud {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+
+.right {
+    margin-left: 30rem; 
+}
+
+
+/* Table */
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+    margin-top: 4rem;
+    
+}
+
+
+
+/* Table */
+
+
+
+table {
+  
+    border: 0;
+    max-width: 99.8%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 1rem;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, .3);
+    margin-top: 1rem;
+    font-family: "Montserrat";
+}
+
+
+table thead {
+    background: #F7F7F7;
+    height: 10vh !important;
+}
+
+th {
+  max-width: 99.8%;
+}
+  
+
+
+table thead tr th {
+    text-transform: uppercase;
+    line-height: 1.7rem !important;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+   
+}
+table tbody {
+    background: #F7F7F7;
+    
+}
+
+
+table tbody tr  td {
+    border-top: 0.4rem solid #fff;
+    padding: 0.1rem 1rem;
+    width: 60rem;
+}
+
+table tbody tr th {
+  padding: 0.1rem 2rem;
+}
+
+table tbody tr td {
+    height: 10vh;
+    line-height: 0.5rem!important;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+.amp span {
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.tre  {
+ width: 20%;
+}
+
+.tre span {
+  margin-left: 2rem;
+}
+
+
+td a {
+    color: #2b1111;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+tr td span {
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+
+.tra span {
+    color: #333;
+    background-color: #fff;
+    padding: 0.4rem 0.4rem;
+}
+
+.tra {
+  width: 30%;
+  
+}
+
+
+.tra, .sec, .un, .pro {
+    text-align: center;
+}
+
+.cen {
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.sec span{
+    color: #319953;
+    background-color: #AFDCBE;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.2rem;
+}
+
+
+.un span {
+    color: #D42620;
+    background-color: #F1B7B5;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.pro span {
+    color: #f5a419;
+    background-color: #FBE0B2;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.2rem;
+}
+
+
+.tre .edit-input{
+  margin-left: 2rem;
+}
+
+.edit-input {
+  width: calc(10rem - 5rem);
+  padding: 0.4rem;
+  box-sizing: border-box;
+  border: 0.1rem solid #333;
+  outline: none; 
+  background: inherit; 
+}
+
+.undo-button {
+  margin-top: 0.7rem;
+}
+ 
+table {
+  border: 1;
+}
+
+
+
+
+@media (max-width: 768px), (max-width: 820px), (max-width: 912px), (max-width: 900px) {
+    .sidebar {
+      display: none;
+      overflow: hidden;
+    }
+
+
+      
+  .sidemenu {
+    display: block;
+    background-color:  #003380;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.3s ease;
+   
+  }
+  
+
+  .sidemenu .txt-area {
+    font-size: 0.7rem;
+  }
+    
+  
+    .mid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .per {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .right {
+      max-width: auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      padding-top: 5rem;
+    }
+
+    .upp div {
+      margin: 8rem;
+    }
+
+  
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .btt-n {
+      text-align: center;
+      margin-top: 1.3rem;
+    }
+  
+    .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      overflow-x: auto;
+      padding: 0 2rem;
+      padding-left: 20rem;
+      width: 55%;
+      z-index: 1;
+    }
+  
+    .table {
+      width: auto;
+      overflow: auto;
+    }
+  
+    th,
+    td {
+      padding: 0.5rem;
+      text-align: left;
+     
+    }
+
+    tr td, tr th {
+      font-size: 1rem;
+    }
+
+
+    
+table tbody tr  td {
+  border-top: 0.4rem solid #fff;
+  padding: 0.1rem 1rem;
+  width: 60rem;
+}
+
+
+
+table thead {
+  background: #F7F7F7;
+  height: 10vh !important;
+}
+
+
+
+
+table thead tr th {
+  text-transform: uppercase;
+  line-height: 1.7rem !important;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding: 0 4rem;
+}
+
+
+table tbody {
+  background: #F7F7F7;
+  
+}
+
+.cen {
+  text-align: center;
+  width: 10rem;
+}
+
+
+table tbody tr  td {
+  border-top: 0.4rem solid #fff;
+  padding: 0.1rem 1rem;
+  width: 70rem;
+}
+
+table tbody tr th {
+padding: 0.1rem 1rem;
+}
+
+table tbody tr td {
+  height: 10vh;
+  line-height: 0.2rem!important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+.amp input {
+margin-left: -3em;
+}
+
+.amp span {
+  margin-left: 1rem;
+}
+
+.tre  {
+  width: 20%;
+}
+
+.tre span {
+  margin-left: 2rem;
+  font-size: smaller;
+}
+
+
+td a {
+  color: #2b1111;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+
+tr td span {
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}
+
+
+.tra span {
+  color: #333;
+  background-color: #fff;
+  padding: 0.2rem 0.4rem;
+}
+
+.tra {
+width: 20%;
+
+}
+
+
+.tra, .sec, .un, .pro, .cen {
+  text-align: center;
+}
+
+.sec span{
+  color: #319953;
+  background-color: #AFDCBE;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+
+.un span {
+  color: #D42620;
+  background-color: #F1B7B5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+.pro span {
+  color: #f5a419;
+  background-color: #FBE0B2;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+
+.tre .edit-input{
+margin-left: 2rem;
+}
+
+
+  }
+
+
+ 
+
+
+
+  
+  /* Media query for screens smaller than 480px */
+  @media screen and (max-width: 480px) {
+    .table {
+      font-size: 0.6rem;
+    }
+  
+    th,
+    td {
+      padding:0.3rem;
+    }
+  }
+
+
+  
+
+
+  .dark-theme {
+    background-color: #222;
+    color: #fff;
+  }
+
+
+  .dark-theme table th{
+    background-color: #000;
+  }
+
+  .dark-theme table td {
+    background-color: #000;
+  }
+
+  .dark-theme .tra {
+    color: #000;
+  }
+
+
+  .dark-theme td i {
+    color: #fff;
+  }
+
+  .dark-theme .edit-input {
+    width: calc(10rem - 5rem);
+    padding: 0.4rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #333;
+    outline: none; 
+    background: inherit; 
+    color: #fff;
+  }
+
+
+  .togg {
+    position: fixed;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.1rem  1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 0 #000;
+    bottom: 28rem;
+    left: 1rem;
+    z-index: 1000;
+}
+
+
+
+
+
+
+
+

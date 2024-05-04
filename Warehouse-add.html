@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="Warehouse-add.css">
+    <link rel="stylesheet" href="responsive-ham.css">
+    <link rel="stylesheet" href="responsive-hamtab.css">
+    <title>Warehouse/Add Vehicle</title>
+
+</head>
+
+<body>
+
+
+    <div class="mobile-container" id="main">
+
+        <div class="me" id="navbar">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ham">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="sid-con">
+        <div class="sidemenu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="uber">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="side-content" id="myLinks">
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="uber">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!-- Mid -->
+    <div class="right" id="myTab">
+        <div class="upp">
+            <div class="bud">
+                <a href="Warehouse.html"> <i class="fa-solid fa-arrow-left-long"></i></a><span>Add Item</span>
+
+            </div>
+            <div class="btt-n">
+                <a href="" class="btt"><button type="submit">Save</button></a>
+            </div>
+        </div>
+
+
+        <div class="grey">
+            <div class="rix">
+                <p>Product details <i class="fa-light fa-asterisk"></i></p>
+
+            </div>
+
+            <div class="rit">
+                <form action="/action_page.php">
+                    <label for="pname">Product Name<br></label>
+                    <input type="text" name="pname" id="pname" placeholder="Enter">
+                </form>
+                <form action="/action_page.php">
+                    <label for="skeeping unit">Stock Keeping Unit(SKU)<br></label>
+                    <input type="text" name="(SKU)" id="lpn" placeholder="Enter">
+                </form>
+                <form action="/action_page.php">
+                    <label for="Category">Category<br></label>
+                    <input type="text" name="category" id="category" placeholder="Enter">
+                </form>
+            </div>
+            <div class="st">
+                <form action="/action_page.php">
+                    <label for="edate">Expiration Date<br></label>
+                    <input type="date" name="date" id="day" placeholder="e.r Ford, Toyota">
+                </form>
+
+                <form action="/action_page.php">
+                    <label for="quantity">Quantity<br></label>
+                    <input type="text" name="qty" id="qty" placeholder="e.r Ford, Toyota">
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="grey">
+            <div class="rix">
+                <p>Location Information <i class="fa-light fa-asterisk"></i></p>
+
+            </div>
+
+            <div class="rit">
+                <form action="/action_page.php">
+                    <label for="slocation">Storage Location<br></label>
+                    <input type="text" name="slo" id="sl" placeholder="Enter">
+                </form>
+
+                <form action="/action_page.php">
+                    <label for="rack/shelf Number">Rack/shelf Number<br></label>
+                    <input type="number" id="quantity" name="quantity" min="0.1" max="50000">
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="grey">
+            <div class="rix">
+                <p>Supplier Information</p>
+
+            </div>
+
+            <div class="rit">
+                <form action="/action_page.php">
+                    <label for="sname">Supplier Name<br></label>
+                    <input type="text" name="sname" id="own" placeholder="Enter">
+                </form>
+
+                <form action="/action_page.php">
+                    <label for="supplier contact">Supplier Contact<br></label>
+                    <input type="text" name="price" id="price" placeholder="Enter">
+                </form>
+
+                <form action="/action_page.php">
+                    <label for="expiry">Insurance Expiry Date<br></label>
+                    <input type="date" name="date" id="day" placeholder="Enter">
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="grey">
+            <div class="rix">
+                <p>Additional Information </p>
+
+            </div>
+
+            <div class="rite">
+                <form action="/action_page.php">
+                    <label for="notes">Notes<br></label>
+                    <textarea>Enter</textarea>
+
+                </form>
+            </div>
+
+
+
+            <button onclick="toggleTheme()" class="togg"><i class="fa-solid fa-moon fa-spin"></i></button>
+            <!-- Button to toggle theme -->
+
+
+
+
+            <script src="Warehouse-add.js"></script>
+            <script src="responsive-ham.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="Warehouse.css">
+    <link rel="stylesheet" href="responsive-ham.css">
+    <link rel="stylesheet" href="responsive-hamtab.css">
+    <title>Warehouse</title>
+
+</head>
+
+<body>
+
+
+    <div class="mobile-container" id="main">
+
+        <div class="me" id="navbar">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ham">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="sid-con">
+        <div class="sidemenu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="active">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="dash">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="dash">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="side-content" id="myLinks">
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="active">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="dash">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="dash">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="mid">
+
+        <div class="per">
+            <div class="right" id="myTab">
+                <div class="upp">
+                    <div class="bud">
+                        <h3>Warehouse</h3>
+                    </div>
+                    <div class="btt-n">
+                        <a href="Warehouse-add.html" class="btt"><i class="fa fa-add"></i>Add Items</a>
+                    </div>
+                </div>
+
+
+
+                <div class="tab">
+
+                    <table class="table" id="editableTable">
+                        <thead>
+                            <tr>
+                                <th class="amp"><input type="checkbox" name="chackbox" id="cbox"><span>Product
+                                        Name</span></th>
+                                <th>GOS Status</th>
+                                <th>Delivery Status</th>
+                                <th>Quantity</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+
+
+                        <tbody>
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Tripod Stand</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="sec"><span>Successful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Graphics Pad</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="sec"><span>Successful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Camera</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="sec"><span>Successful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Camera</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="sec"><span>Successful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Itel Power Bank</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="sec"><span>Successful</span></td>
+                                <td class="cen"><span>2</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+                            <!-- -->
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Tripod Stand</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="un"><span>Unsuccessful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Mp3 Speaker</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="un"><span>Unsuccessful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Air Humidifier</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="un"><span>Unsuccessful</span></td>
+                                <td class="cen"><span>12</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+                            <!--  -->
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Game Pad</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="pro"><span>In Progress</span></td>
+                                <td class="cen"><span>2</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Graphics Tablet</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="pro"><span>In Progress</span></td>
+                                <td class="cen"><span>4</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Camera</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="pro"><span>In Progress</span></td>
+                                <td class="cen"><span>1</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>Stylus Pen</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="pro"><span>In Progress</span></td>
+                                <td class="cen"><span>11</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="tre"> <input type="checkbox"><span>120GB Hardrive</span></td>
+                                <td class="tra"><span>In Transit</span></td>
+                                <td class="pro"><span>In Progress</span></td>
+                                <td class="cen"><span>2</span></td>
+                                <td><a href="#" class="edit-link"><i class="far fa-pen-to-square"></i></a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--    <button id="undoButton" class="undo-button" onclick="undoChange()">Undo</button>-->
+    <button onclick="toggleTheme()" class="togg"><i class="fa-solid fa-moon fa-spin"></i></button>
+    <!-- Button to toggle theme -->
+
+
+
+
+
+
+    <script src=" https://unpkg.com/leaflet/dist/leaflet.js">
+    </script>
+
+
+    <script src="Warehouse.js"></script>
+    <script src="responsive-ham.js"></script>
+
+</body>
+
+</html>

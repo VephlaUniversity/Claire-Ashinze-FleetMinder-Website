@@ -1,0 +1,64 @@
+
+@media (max-width: 820px), (max-width: 920px), (max-width: 912px) {
+
+    span.size-15 {
+        font-size: 2rem;
+        font-variation-settings: 'OPSZ' 20;
+      }
+
+      .txt-area {
+        font-size: 0.8rem;
+        margin-left: 0.9rem;
+    }
+
+
+    .dash a, .active a {
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidemenu {
+        margin: 0;
+        background-color: #fff;
+        text-align: center;
+        overflow: hidden;
+        width: 50%;
+    }
+
+    .sidebar .uber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-top: 4rem;
+        padding: 0.5rem 0.6rem;
+        color: #fff;
+        overflow: hidden;
+        font-size: 0.7rem;
+      }
+    
+
+
+      .sidebar {
+        background-color:  #003380;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        border-top: 0.1rem solid #fff;
+        
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+    
+}
+
+
+/* Ham Menu End */
