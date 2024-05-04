@@ -1,0 +1,325 @@
+@media only screen and (max-width: 820px) {
+
+  
+  .header {
+    margin: 0;
+      background-color: #fff;
+      text-align: center;
+
+  }
+  
+  .menu .logo {
+    display: flex;
+      margin-top: auto;
+      margin-bottom: auto;
+  
+  }
+  .menu .logo img {
+     max-width: 8rem;
+  }
+  
+  /*Navbar*/
+  
+  .me {
+    display: flex;
+    padding: 0.3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+ 
+  .menu .off {
+    display: flex;
+    position: relative;
+    right: 0;
+  }
+  
+  .menu {
+    display: flex;
+}
+
+  
+
+  .menu .naija {
+    margin-top: 2rem;
+  }
+
+  
+  .navbar {
+    display: flex;
+    margin: 0;
+      margin-top: 0;
+      margin-bottom: auto;
+      padding: auto;
+     
+  }
+  
+  .nav-a {
+    flex-direction: row;
+  }
+  
+  .nav-a a { 
+  font-size: 1.3rem;
+  }
+  
+  
+  /*Nav Buttons*/
+  
+    
+      
+     .menu .logs {
+        display: flex;
+  }
+
+  .menu .logs a {
+    display: flex;
+    font-size: 1.1rem;
+  }
+  
+  
+  
+      .dropbtn {
+        margin: 0;
+        float: none;
+        font-size: 1.3rem; 
+      }
+    
+      .dropdown-content {
+        margin: 0;
+        margin-top: 1rem; 
+        left: 90%; 
+        transform: translateX(-50%); 
+        border: 0.1rem solid #333;
+        min-width: 15rem;
+      }
+  
+    }
+  
+
+    @media screen and  (max-width: 900px), (max-width: 1000px), (max-width: 1200px), (max-width: 1300px) {
+      
+    
+
+      
+ .menu .off {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: auto;
+    bottom: auto;
+  }
+  
+ 
+
+  .menu .logo, .menu .logs {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+
+   
+  .menu .logo {
+    display: flex;
+      margin-top: auto;
+      margin-bottom: auto;
+      
+  }
+  .menu .logo img {
+     max-width: 10rem;
+  }
+  
+  /*Navbar*/
+  
+  .me {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+}
+
+  
+
+ 
+
+  
+  .navbar {
+    display: flex;
+    margin: 0;
+      margin-top: 0;
+      margin-bottom: auto;
+      padding: auto;
+     
+  }
+  
+  .nav-a {
+    flex-direction: row;
+  }
+  
+  .nav-a a { 
+  font-size: 1.3rem;
+  }
+  
+  
+  /*Nav Buttons*/
+  
+    
+  
+    
+     .menu .logs {
+        display: flex;
+        position: absolute;
+        right: -9em;
+    
+  }
+
+  .menu .logs a {
+    display: flex;
+    font-size: 1.3rem;
+  }
+
+ 
+    }
+
+
+    /* Header End */
+    
+
+
+
+      @media screen and (max-width: 820px) {
+
+        /* Adjustments for the map */
+        .mapp {
+            padding: 1rem 5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        #map {
+            height: 80vh;
+            width: 120%;
+        }
+    }
+
+
+
+
+
+
+
+      /* Footer */
+
+  
+/* Add a media query for smaller devices */
+@media only screen and (max-width: 768px) {
+
+    footer {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2rem;
+        margin-top: 4rem;
+    }
+
+    .logos {
+      margin-right: 35rem;
+      margin-bottom: 15rem;
+    }
+
+
+    .logos img {
+      max-width: 80%;
+    }
+  
+    
+    .ftr-content {
+      display: grid;
+      grid: 10rem / auto auto auto;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+
+    .lft {
+      margin-bottom: 15rem;
+    }
+
+    .rt-ft {
+      margin-bottom: 13rem;
+    }
+   
+  
+    
+    .lft li a, .mid-ft li a, .rt-ft li a {
+      border: none;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+  
+
+    .icons {
+      margin-top: 2rem;
+    }
+  
+    .icons a {
+      margin: 2px;
+      margin-top: 0.3rem;
+    }
+  
+
+    .end {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+
+    .end div {
+      margin: 3rem;
+    }
+
+    
+    
+    .nig p {
+      font-size: 1.2rem;
+    }
+  
+    .inpt {
+      margin-top: 4rem;
+
+    }
+
+
+    footer form {
+      display: flex;
+    }
+    
+    
+  
+    footer input[type=email]{
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 1rem;
+    }
+
+
+  
+    .send button {
+      padding: 0.7rem 0.8rem;
+      margin-left: 0.1rem;
+      margin-top: 1rem;
+    }
+
+
+    
+  }
+  

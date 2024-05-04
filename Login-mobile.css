@@ -1,0 +1,256 @@
+/* Header */
+
+  /* Add a media query for smaller devices */
+  @media only screen and (max-width: 768px), (max-width: 820px), (max-width: 1000px), (max-width: 1300px) {
+
+    .header-content {
+        display: none;
+    }
+    
+
+   
+   
+    .header-content.show {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        padding: 1rem;
+        position: absolute;
+        top: 5.2rem;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        border-top: 0.1rem solid #666;
+
+    }
+
+
+    .menu-toggle {
+        display: block;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .menu-toggle div {
+      margin: 0.4rem;
+    }
+
+    .ham {
+      display: flex;
+      padding-top: 0.1rem;
+      padding-right: 0.8rem;
+      padding-bottom: 0.7rem;
+      position: absolute;
+        right: 1em;
+        top: auto;
+        bottom: auto;
+        background-color: #EA6813;
+    }
+    
+    
+
+   
+    .me {
+      display: flex;
+      padding: 0.1rem;
+      
+    }
+
+   
+
+    .menu .off {
+      display: block;
+      position: absolute;
+        left: 0;
+        top: 0;
+    }
+   
+    .menu {
+      display: flex;
+      margin-bottom: 2.9rem;
+  }
+
+    .menu .naija {
+      margin-top: 2rem;
+    }
+    
+    
+   
+    
+  
+    .navbar {
+        padding: auto;
+    }
+
+    .nav-a{ 
+     margin-left: auto;
+     margin-right: auto;
+    }
+    
+    .nav-a a {
+      margin: 0.1rem;
+      padding: 0.7rem;
+      max-height: 20vh;
+    }
+
+
+    .navbar .logo img {
+        display: none;
+    }
+  
+   .navbar .logs {
+        display: none;
+        
+}
+
+  
+    .dropbtn {
+      float: none; 
+      text-align: center;
+    padding: 0.7rem 1.5rem;
+    max-height: 20vh;
+  
+    }
+  
+    .dropdown-content {
+      margin: 0;
+      margin-top: 1rem; 
+      left: 90%; 
+      transform: translateX(-50%); 
+      border: 0.1rem solid #333;
+
+    }
+
+
+    
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+    
+  /* Footer */
+
+  
+/* Add a media query for smaller devices */
+@media only screen and (max-width: 768px) {
+
+    footer {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2rem;
+        margin-top: 4rem;
+    }
+
+    .logos {
+      margin-right: 35rem;
+      margin-bottom: 15rem;
+    }
+
+
+    .logos img {
+      max-width: 80%;
+    }
+  
+    
+    .ftr-content {
+      display: grid;
+      grid: 10rem / auto auto auto;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+
+    .lft {
+      margin-bottom: 15rem;
+    }
+
+    .rt-ft {
+      margin-bottom: 13rem;
+    }
+   
+  
+    
+    .lft li a, .mid-ft li a, .rt-ft li a {
+      border: none;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+  
+
+    .icons {
+      margin-top: 2rem;
+    }
+  
+    .icons a {
+      margin: 2px;
+      margin-top: 0.3rem;
+    }
+  
+
+    .end {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+
+    .end div {
+      margin: 3rem;
+    }
+
+    
+    
+    .nig p {
+      font-size: 1.2rem;
+    }
+  
+    .inpt {
+      margin-top: 4rem;
+
+    }
+
+
+    footer form {
+      display: flex;
+    }
+    
+    
+  
+    footer input[type=email]{
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 1rem;
+    }
+
+
+  
+    .send button {
+      padding: 0.7rem 0.8rem;
+      margin-left: 0.1rem;
+      margin-top: 1rem;
+    }
+
+
+    
+  }
+  
+
+
+
+
+
+  
