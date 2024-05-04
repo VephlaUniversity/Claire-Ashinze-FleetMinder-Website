@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="My-Vehicles.css">
+    <link rel="stylesheet" href="responsive-ham.css">
+    <link rel="stylesheet" href="responsive-hamtab.css">
+    <title>My Vehicle</title>
+
+
+</head>
+
+<body>
+
+    <div class="mobile-container" id="main">
+
+        <div class="me" id="navbar">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ham">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="sid-con">
+        <div class="sidemenu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="uber">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="side-content" id="myLinks">
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+            <div class="logo">
+                <a href="index.html"> <img src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="bar">
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe871;</span>
+                    <a href="Dashboard.html">Dashboard</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe531;</span>
+
+                    <a href="My-vehicles.html">My Vehicles</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe7fd;</span>
+                    <a href="riders.html">My Riders</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xe593;</span>
+                    <a href="driversafety.html">Safety & Support</a>
+                </div>
+                <div class="dash">
+                    <span class="material-symbols-outlined size-15">&#xebb8;</span>
+                    <a href="Warehouse.html">Warehouse</a>
+                </div>
+
+                <a href="Profile.html" class="abb">
+                    <div class="uber">
+                        <div class="ub">
+                            <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png"
+                                alt="Uber">
+                        </div>
+                        <div class="txt-area">
+                            <h4>GIG Logistics</h4>
+                            <p>boss@gigl.com</p>
+                        </div>
+                        <div class="ic">
+                            <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div class="mid">
+
+        <div class="per">
+            <div class="right" id="myTab">
+                <div class="top">
+                    <div class="bud">
+                        <h3>My Vehicles</h3>
+                    </div>
+                    <div class="btt-n">
+                        <a href="Add-vehicle.html" class="btt"><i class="fa fa-add"></i>Add
+                            Vehicle</a>
+                    </div>
+                </div>
+
+
+
+                <div class="tab">
+
+
+                    <div class="th">
+                        <div class="ex">
+                            <p class="nm">Name</p>
+
+                        </div>
+                        <div class="ex">
+                            <p class="gps">GPS Status</p>
+
+                        </div>
+                        <div class="ex">
+                            <p class="num">Plate Number</p>
+
+                        </div>
+                        <div class="ex">
+                            <p class="due">Due for Maintenance</p>
+
+                        </div>
+
+                        <div class="ex">
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/MKTY5yfV/Toyota_Yaris.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/k5f8ZnwC/trk.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/GpyCM1Yp/Cargo_Ship.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/xCXR3JQh/Motorcycle_truck!.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/Bb8xHdT0/del.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/XJtgHj7J/Dostawcze_Renault.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/X7fB8DZY/Corolla.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/QM4m7g2c/Truck_Auto_Price.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/hj8RwxVT/Camry.png" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/tRfdp4bC/Uber.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/L5wtHfCR/Shipyard.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/x8vHLC9V/download.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/gJJDhb45/Hunder_Civic.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/XJtgHj7J/Dostawcze_Renault.jpg" alt="Veh" class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+
+
+
+                    <div class="ble">
+                        <input type="checkbox" name="checkbox" id="chbox">
+                        <img src="https://i.postimg.cc/VNPJWwHY/Toyota-Tacoma-Double-Cab-2005-12.jpg" alt="Veh"
+                            class="vehicle-image">
+                        <span>Vehicle 1</span>
+                        <p class="tr"><span>In Transit</span></p>
+                        <p>PNY-345</p>
+                        <p>28th Sep, 2023</p>
+                        <i class="fa fa-pen-to-square edit-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <button onclick="toggleTheme()" class="togg"><i class="fa-solid fa-moon fa-spin"></i></button>
+    <!-- Button to toggle theme -->
+
+
+    <script src=" https://unpkg.com/leaflet/dist/leaflet.js">
+    </script>
+
+    <script src="My-vehilces.js"></script>
+    <script src="responsive-ham.js"></script>
+
+</body>
+
+</html>

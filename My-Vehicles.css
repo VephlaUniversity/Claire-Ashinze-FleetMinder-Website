@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+  }
+  
+
+  .push-tab {
+    margin-left: 15rem;
+  }
+  
+  
+  
+  /* SideBar */
+  
+  
+  
+  .sidemenu {
+    display: block;
+    background-color:  #003380;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  
+  
+  
+  
+  .budy {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidemenu .logo img {
+    width: 50%;
+    margin-left: 8rem;
+    margin-top: 3rem;
+  }
+  
+  
+  .bar {
+    margin-top: 8rem;
+  }
+  
+  
+  
+  .dash, .active {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1.5rem ;
+    
+  }
+  
+  .active {
+    background-color: #0044AA;
+  }
+  
+  
+  .dash a, .active a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 0.4rem;
+    margin-left: 0.7rem;
+  }
+  
+  .dash i {
+    color: #fff;
+  }
+  
+  
+  
+  .dash:hover, .uber:hover {
+    background-color: #0044AA;
+  }
+  
+  
+  .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  .uber {
+    background-color: #0044AA;
+  }
+  
+  
+  
+  
+  
+  
+  .uber {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-left: 1rem;
+      margin-top: 4rem;
+      padding: 0.5rem 0.6rem;
+      color: #fff;
+      overflow: hidden;
+  }
+  
+  .ub  {
+   margin-top: 0.8rem;
+  }
+  
+  .ub i {
+    position: absolute;
+    margin-left: 1.8rem;
+    margin-top: 1.4rem;
+    z-index: 90;
+    color: #04802E;
+    font-size: 6px;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+  }
+  
+  .txt-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  
+  
+  .txt-area h4 {
+    margin-top: 0.2rem;
+    color: #fff;
+  }
+  
+  
+  
+  .txt-area p {
+    margin-top: 0.8rem;
+    color: #ffffff98;
+  }
+  
+  .ic {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .ic  {
+    color: #fff;
+  }
+  
+  
+  
+  
+  /* Ham Menu */
+  
+  .show {display: block, !important;}
+  
+  
+  .push-tab {
+    margin-left: 15rem;
+  }
+  
+  .me, .closebtn {
+    display: none;
+  }
+  
+  .ham, .menu {
+    display: none;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .side-content {
+    display:none;
+  }
+  
+
+
+
+/* Mid Content*/
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.per {
+    width: 90%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btt  {
+    color: #fff;
+    background-color: #EA6813;
+    border: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btt i {
+    margin-right: 0.5rem;
+}
+
+.btt:hover{
+    background-color: #ED813A;
+}
+
+.right {
+    margin-left: 295px; 
+    font-size: 1.7rem; 
+    padding: 1rem 0.6rem;
+    font-weight: 400;
+}
+
+.ble:hover {
+    background-color: #dfdfdf;
+}
+
+/* Table */
+
+.tab {
+    display: block;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.tr span {
+    background-color: #fff;
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+}
+
+
+
+/* llllll */
+
+.tab div {
+    margin-top: 0.5rem;
+}
+
+.th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #F7F7F7;
+    text-align:left;
+    padding: 0.7rem;
+}
+
+.nm {
+    margin-right: 4rem;
+}
+
+.num {
+    margin-right: 4rem;
+}
+
+.due {
+    margin-right: 4rem;
+}
+
+.th .gps{
+    margin-right: 5rem;
+}
+
+
+.all {
+    margin-top: 5rem;
+}
+
+
+
+/*
+.ex {
+    margin: 0 0 0 4rem;
+    height: 2rem;
+} */
+
+.th div {
+    margin: 0 3rem;
+}
+
+.th p {
+   margin-top: 0.4rem;
+   
+}
+
+.tab
+
+
+.edit-mode {
+    background-color: #f0f0f0;
+    outline: 1px solid #ccc;
+}
+
+
+.ble {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    background-color: #F7F7F7;
+    padding: 0.7rem;
+}
+
+.ble p{
+    padding: 0.1rem 5.1rem;
+    margin-left: 3rem;
+    margin-top: 0.6rem;
+}
+
+
+
+.ble i  {
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+}
+
+.ble img {
+    width: 1.9rem;
+    height: 1.8rem;
+    border-radius: 0.1rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+
+}
+
+
+.ble span {
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+.ble input {
+    margin-left: 2rem;
+}
+
+
+#chbox {
+    margin-top: 0.3rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .tab {
+        overflow-x: auto;
+        white-space: nowrap; 
+    }
+
+  
+
+
+    
+
+.tab {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-left: 38rem;
+}
+
+.ble {
+    display: flex; 
+    padding: 0.7rem;
+}
+
+.ble img {
+    width: 1.9rem;
+    height: 1.8rem;
+    border-radius: 0.1rem;
+}
+
+.right {
+    margin-left: 1%;
+    padding: 1rem 0.6rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    width: 100%; 
+    padding: 1rem;
+    margin: 0 auto; 
+    margin-top: 4rem;
+}
+}
+
+
+
+
+
+
+body.dark-theme  {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme  .th {
+    background-color: #000;
+}
+
+.dark-theme .ble {
+    background-color: #000;
+}
+
+.dark-theme .tr {
+    color: #000;
+}
+
+
+
+
+.togg {
+    position: fixed;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.1rem  1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 0 #000;
+    bottom: 28rem;
+    left: 1rem;
+}
